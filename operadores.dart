@@ -12,4 +12,16 @@ void main(List<String> args) {
   int decena = 10;
   List<int> numeros2 = [...pares, if (decena % 2 == 0) ...impares, 11, 12, 14];
   print(numeros2);
+
+  List<String> Paises = ['Bolivia', 'Peru', 'Chile', 'Brasi'];
+  if (Paises.contains('Peru')) {
+    print('hay un pais identico a Peru');
+  } else {
+    print('NO hay un pais en la lista ');
+  }
+  List listavacia = [...numeros2, ...Paises];
+
+  print(listavacia);
+  print(listavacia.runtimeType);
+  print(numeros2.runtimeType);
 }
